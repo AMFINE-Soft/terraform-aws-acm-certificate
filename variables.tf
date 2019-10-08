@@ -1,16 +1,16 @@
 variable "domain_name" {
-  type        = "string"
+  type        = string
   description = "Primary certificate domain name"
 }
 
 variable "subject_alternative_names" {
-  type        = "list"
+  type        = list(string)
   default     = []
   description = "Subject alternative domain names"
 }
 
 variable "hosted_zone_id" {
-  type        = "string"
+  type        = string
   description = "Route 53 Zone ID for DNS validation records"
 }
 

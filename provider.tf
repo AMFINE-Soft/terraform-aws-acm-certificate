@@ -1,9 +1,11 @@
 provider "aws" {
-  alias = "acm_account"
+  version = "~> 2.30.0"
+  alias   = "acm_account"
 }
 
 provider "aws" {
-  alias = "route53_account"
+  version = "~> 2.30.0"
+  alias   = "route53_account"
 }
 
 /**
@@ -17,4 +19,6 @@ provider "aws" {
  * https://git.io/fh0qw
  */
 
-provider "aws" {}
+provider "aws" {
+  version = "~> 2.30.0"
+}
